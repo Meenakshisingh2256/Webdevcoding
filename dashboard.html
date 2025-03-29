@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>StayEase - Hostel Management</title>
+    <title>Campustay - Hostel Management</title>
     
-    <!-- Link to Google Fonts for Cinzel and Winky Sans -->
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Winky+Sans:wght@465&display=swap&italic=true" rel="stylesheet">
     
     <style>
@@ -15,10 +14,10 @@
         }
        .marquee-container {
             width: 100%;
-            background-color: black; /* Black background for the bar */
+            background-color: black; 
             overflow: hidden;
             white-space: nowrap;
-            padding: 15px 0; /* Adjust the height of the bar */
+            padding: 15px 0; 
         }
 
         .moving-headline {
@@ -31,33 +30,31 @@
 
 @keyframes marquee {
     from {
-        transform: translateX(100vw); /* Starts off-screen from the right */
+        transform: translateX(100vw); 
     }
     to {
-        transform: translateX(-100%); /* Moves completely out to the left */
+        transform: translateX(-100%);
     }
 }
 
-        /* General Body Styles */
+        
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #F7F4EA; /* Light Creamy Beige Background */
+            background-color: #F7F4EA; 
         }
 
-        /* Header Styles */
         .header {
-            background: #80A1D4; /* Soft Blue Background */
+            background: #80A1D4;
             color: white;
             padding: 20px;
             text-align: center;
             font-size: 30px;
-            font-family: 'Cinzel', serif; /* Apply Cinzel font */
-            font-weight: 700; /* Cinzel Font Weight */
+            font-family: 'Cinzel', serif; 
+            font-weight: 700; 
         }
 
-        /* One-liner below the header */
         .one-liner {
             text-align: center;
             font-size: 18px;
@@ -66,22 +63,21 @@
             color: #333;
         }
 
-        /* Box below the one-liner */
+        
         .options-box {
             width: 95%;
             margin: 0 auto;
             padding: 20px;
             box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
-            background: #DED9E2; /* Soft Lavender Background for the main box */
+            background: #DED9E2; 
             border-radius: 8px;
-            margin-bottom: 40px; /* Increased space between box and next section */
+            margin-bottom: 40px;
         }
 
-        /* Option Styling */
         .options {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
-            gap: 20px; /* Decreased gap between options */
+            gap: 20px; 
             text-align: center;
         }
 
@@ -95,33 +91,33 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            height: 140px; /* Reduced height for the options */
+            height: 140px;
             text-align: center;
-            overflow: hidden; /* Prevents overflow */
+            overflow: hidden; 
         }
 
         .option:hover {
-            background: #C0B9DD; /* Light Lavender Purple hover effect */
+            background: #C0B9DD; 
             color: white;
-            transform: scale(1.1); /* Slightly increased size on hover */
+            transform: scale(1.1); 
         }
 
         .option img {
-            width: 28%; /* Reduced size to 40% of original 70% */
+            width: 28%; 
             height: auto;
             object-fit: cover;
-            margin-bottom: 10px; /* Added space below the image */
+            margin-bottom: 10px; 
         }
 
         .option-text {
-            font-size: 14px; /* Slightly smaller font size */
+            font-size: 14px; 
             font-weight: 600;
             display: block;
-            margin-top: 10px; /* Space between image and text */
+            margin-top: 10px; 
         }
 
         .footer {
-            background: #80A1D4; /* Same color as header */
+            background: #80A1D4; 
             color: white;
             text-align: center;
             padding: 20px;
@@ -150,17 +146,16 @@
         <div class="moving-headline">Notice/Announcement : FEE Payment Due!!</div>
     </div>
 
-    <!-- Header Section -->
+    
     <div class="header">
         CAMPUSTAY
     </div>
 
-    <!-- One-liner below the header -->
+    
     <div class="one-liner">
         Your go-to platform for a smooth and hassle-free hostel stay.
     </div>
 
-    <!-- Options Box Section -->
     <div class="options-box">
         <div class="options">
             <div class="option">
