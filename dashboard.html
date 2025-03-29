@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StayEase - Hostel Management</title>
+    
+    <!-- Link to Google Fonts for Cinzel and Winky Sans -->
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Winky+Sans:wght@465&display=swap&italic=true" rel="stylesheet">
+    
+    <style>
+        .container {
+            padding: 20px;
+            text-align: center;
+        }
+       .marquee-container {
+            width: 100%;
+            background-color: black; /* Black background for the bar */
+            overflow: hidden;
+            white-space: nowrap;
+            padding: 15px 0; /* Adjust the height of the bar */
+        }
+
+        .moving-headline {
+    display: inline-block;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    animation: marquee 10s linear infinite;
+}
+
+@keyframes marquee {
+    from {
+        transform: translateX(100vw); /* Starts off-screen from the right */
+    }
+    to {
+        transform: translateX(-100%); /* Moves completely out to the left */
+    }
+}
+
+        /* General Body Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #F7F4EA; /* Light Creamy Beige Background */
+        }
+
+        /* Header Styles */
+        .header {
+            background: #80A1D4; /* Soft Blue Background */
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 30px;
+            font-family: 'Cinzel', serif; /* Apply Cinzel font */
+            font-weight: 700; /* Cinzel Font Weight */
+        }
+
+        /* One-liner below the header */
+        .one-liner {
+            text-align: center;
+            font-size: 18px;
+            margin: 20px 0;
+            font-weight: 600;
+            color: #333;
+        }
+
+        /* Box below the one-liner */
+        .options-box {
+            width: 95%;
+            margin: 0 auto;
+            padding: 20px;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+            background: #DED9E2; /* Soft Lavender Background for the main box */
+            border-radius: 8px;
+            margin-bottom: 40px; /* Increased space between box and next section */
+        }
+
+        /* Option Styling */
+        .options {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px; /* Decreased gap between options */
+            text-align: center;
+        }
+
+        .option {
+            background: #f1f1f1;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 140px; /* Reduced height for the options */
+            text-align: center;
+            overflow: hidden; /* Prevents overflow */
+        }
+
+        .option:hover {
+            background: #C0B9DD; /* Light Lavender Purple hover effect */
+            color: white;
+            transform: scale(1.1); /* Slightly increased size on hover */
+        }
+
+        .option img {
+            width: 28%; /* Reduced size to 40% of original 70% */
+            height: auto;
+            object-fit: cover;
+            margin-bottom: 10px; /* Added space below the image */
+        }
+
+        .option-text {
+            font-size: 14px; /* Slightly smaller font size */
+            font-weight: 600;
+            display: block;
+            margin-top: 10px; /* Space between image and text */
+        }
+
+        .footer {
+            background: #80A1D4; /* Same color as header */
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+        }
+
+        .footer-links {
+            margin-bottom: 10px;
+        }
+
+        .footer-links a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 600;
+        }
+
+        .footer-links a:hover {
+            text-decoration: underline;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="marquee-container">
+        <div class="moving-headline">Notice/Announcement : FEE Payment Due!!</div>
+    </div>
+
+    <!-- Header Section -->
+    <div class="header">
+        CAMPUSTAY
+    </div>
+
+    <!-- One-liner below the header -->
+    <div class="one-liner">
+        Your go-to platform for a smooth and hassle-free hostel stay.
+    </div>
+
+    <!-- Options Box Section -->
+    <div class="options-box">
+        <div class="options">
+            <div class="option">
+                <img src="https://icons.veryicon.com/png/o/miscellaneous/broken-linear-icon/dashboard-81.png" alt="Dashboard">
+                <div class="option-text">Dashboard</div>
+            </div>
+            <div class="option">
+                <img src="https://cdn1.vectorstock.com/i/1000x1000/45/90/payment-icon-vector-5784590.jpg" alt="Fee Payment">
+                <div class="option-text">Fee Payment</div>
+            </div>
+            <div class="option">
+                <img src="https://thumbs.dreamstime.com/z/housekeeping-vector-logo-design-white-background-166957150.jpg" alt="Housekeeping">
+                <div class="option-text">Housekeeping</div>
+            </div>
+            <div class="option">
+                <img src="https://static.vecteezy.com/system/resources/previews/007/610/185/non_2x/laundry-logo-design-template-emblem-concept-design-creative-symbol-icon-free-vector.jpg" alt="Amenities">
+                <div class="option-text">Amenities</div>
+            </div>
+            <div class="option">
+                <img src="https://t4.ftcdn.net/jpg/05/10/87/95/360_F_510879590_4rFLdOZeNU3dAY9odAwqnkdQRfYnhuwJ.jpg" alt="Support">
+                <div class="option-text">Support</div>
+            </div>
+            <div class="option">
+                <img src="https://www.shutterstock.com/image-vector/visitor-isolated-icon-simple-element-260nw-1336291895.jpg" alt="Visitor Management">
+                <div class="option-text">Visitor Management</div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>© 2025 All rights reserved — CampusStay Pvt Ltd</p>
+        </div>
+    </footer>
+</body>
+</html>
